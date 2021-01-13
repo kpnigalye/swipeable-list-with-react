@@ -15,7 +15,7 @@ const SwipeableListItem = (props) => {
     //////////////////////////  MOUSE EVENTS  //////////////////////////
     const onDragEndMouse = (evt) => {
         if (checkIfSwipeToLeft(evt.screenX)) {
-            if (hideOptions && (dragStartX - evt.screenX) > optionsDiv.offsetWidth) {
+            if (hideOptions && (dragStartX - evt.screenX) > optionsDiv.offsetWidth/2) {
                 swipeFrontDiv.style.transform = `translateX(${-optionsDiv.offsetWidth}px)`;
                 setHideOptions(false)
             }
@@ -33,7 +33,7 @@ const SwipeableListItem = (props) => {
     //////////////////////////  TOUCH EVENTS  //////////////////////////
 
     const onDragStartTouch = (evt) => {
-        evt.preventDefault();
+        //evt.preventDefault();
         setDragStartX(evt.targetTouches[0].screenX);
     }
 

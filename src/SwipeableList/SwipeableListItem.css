@@ -15,6 +15,7 @@
     background: #01f1f9;
     margin: 0;
     cursor: grab;
+    transition: all .75s ease;
 }
 
 .swipe-back {
