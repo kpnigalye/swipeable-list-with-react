@@ -1,0 +1,45 @@
+.wrapper {
+    height: 80px;
+    text-align:center;
+    position: relative;
+    border: 3px solid #01d4f9;
+}
+
+.swipe-front {
+    position: absolute;
+    top:0;
+    left:0;
+    float:left;
+    width:100%;
+    height: 100%;
+    background: #01f1f9;
+    margin: 0;
+    cursor: grab;
+}
+
+.swipe-back {
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper .changeBrand, .wrapper .deleleteItem {
+    text-align:center;
+    font-weight: bold;
+    border-width: 1px 0;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.wrapper .deleleteItem {
+    background: #F90101;
+    border-color: #F90101;
+}
+
+.wrapper .changeBrand {
+    background: #01f937;
+    border-color: #64f901;
+}
